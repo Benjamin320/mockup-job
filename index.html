@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Job Finder</title>
   <link rel="stylesheet" href="style.css">
+  <script type="module" crossorigin src="/assets/index-D-5ha-dx.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BCp7r9c8.css">
 </head>
 
 <body>
@@ -26,8 +28,8 @@
   <header>
     <!-- Search (Molecule) -->
     <section class="search">
-      <input type="text" class="skeleton"/>
-      <button></button>
+      <input type="text" id="search-input" placeholder="Buscar..." />
+      <button>Buscar</button>
     </section>
   </header>
 
@@ -36,70 +38,97 @@
 
     <!-- Filters (Organism) -->
     <aside>
-      <h2 class="skeleton"></h2>
+      <h2>Filtros</h2>
 
       <!-- Atom -->
       <label>
-        <p class="skeleton title"></p>
-        <p class="skeleton select"></p>
+        <p class="title">Ubicación</p>
+        <select name="" id="">
+          <option value="">Santiago</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
       </label>
 
       <label>
-        <p class="skeleton title"></p>
-        <p class="skeleton select"></p>
+        <p class="title">Modalidad</p>
+        <select name="" id="">
+          <option value="">Part-time</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
       </label>
 
-      <label>
-        <p class="skeleton title"></p>
-        <p class="skeleton select"></p>
-      </label>
+
 
       <label>
-        <p class="skeleton title"></p>
-        <p class="skeleton select"></p>
+        <p class="title">Salario</p>
+        <div id="salary-slider"></div>
+        <p id="salary-value"></p>
       </label>
 
-      <label>
-        <p class="skeleton title"></p>
-        <p class="skeleton select"></p>
-      </label>
     </aside>
 
     <!-- Job List (Organism) -->
     <section class="job-list">
 
-      <h2 class="skeleton"></h2>
+      <h2>Trabajos</h2>
 
       <!-- Job Card (Molecule) -->
-      <article class="job-card">
-        <h3 class="skeleton"></h3>
-        <div class="job-info">
-          <p class="skeleton"></p>
-          <p class="skeleton"></p>
-          <p class="skeleton"></p>
-        </div>
-        <button></button>
-      </article>
+      <div class="jobs">
+        <!-- <article class="job-card">
+          <div class="header">
+            <div class="header-job">
+              <h3 class="">Frontend Developer</h3>
+              <p>TechNova</p>
+            </div>
+            <div class="tags">
+              <p class="tag">React</p>
+              <p class="tag">JavaScript</p>
+              <p class="tag">HTML</p>
+              <p class="tag">CSS</p>
+            </div>
+          </div>
 
-      <article class="job-card">
-        <h3 class="skeleton"></h3>
-        <div class="job-info">
-          <p class="skeleton"></p>
-          <p class="skeleton"></p>
-          <p class="skeleton"></p>
-        </div>
-        <button></button>
-      </article>
+          <div class="job-info">
+            <div class="job-info__desc">
+              <p class="info">Ubicación:</p>
+              <p class="desc">Santiago</p>
+            </div>
+            <div class="job-info__desc">
+              <p class="info">Descripción:</p>
+              <p class="desc">Buscamos desarrollador frontend con experiencia en React y buenas prácticas
+                de UI.</p>
+            </div>
+            <div class="job-info__desc">
+              <p class="info">Salario:</p>
+              <p class="desc">$1.200.000 - $1.500.000</p>
+            </div>
+          </div>
+          <button>Enviar CV</button>
+        </article>
 
-      <article class="job-card">
-        <h3 class="skeleton"></h3>
-        <div class="job-info">
-          <p class="skeleton"></p>
-          <p class="skeleton"></p>
-          <p class="skeleton"></p>
-        </div>
-        <button></button>
-      </article>
+        <article class="job-card">
+          <h3 class="skeleton"></h3>
+          <div class="job-info">
+            <p class="skeleton"></p>
+            <p class="skeleton"></p>
+            <p class="skeleton"></p>
+          </div>
+          <button></button>
+        </article>
+
+        <article class="job-card">
+          <h3 class="skeleton"></h3>
+          <div class="job-info">
+            <p class="skeleton"></p>
+            <p class="skeleton"></p>
+            <p class="skeleton"></p>
+          </div>
+          <button></button>
+        </article> -->
+      </div>
+
 
     </section>
 

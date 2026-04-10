@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #f3f3f3ee;
+    background: #f5f7fb;
     color: #1f2937;
     line-height: 1.5;
 }
@@ -50,12 +50,12 @@ input {
     background: #e9e9e9;
     transition: 0.2s;
     width: 80%;
-    animation: 2s ease-in-out 1s infinite normal none running shimmer;
+    /* animation: 2s ease-in-out 0.5s infinite normal none running shimmer; */
 }
 
 input:focus {
     border-color: #6366f1;
-    background: #fff;
+    background: #e1e1e1;
 }
 
 .search {
@@ -74,9 +74,8 @@ button {
     cursor: pointer;
     transition: 0.2s;
     width: 150px;
-    opacity: 0.7;
+    opacity: 0.9;
     min-height: 30px;
-    animation: 2s ease-in-out 1s infinite normal none running shimmer;
 }
 
 button:hover {
@@ -214,11 +213,11 @@ main {
 }
 
 .skeleton {
-    background-color: #cbcacbee;
+    background-color: #e5e7eb;
     border-radius: 4px;
     min-height: 24px;
     min-width: 150px;
-    animation: 2s ease-in-out 1s infinite normal none running shimmer;
+    animation: 2s ease-in-out 0.5s infinite normal none running shimmer;
 }
 
 p.skeleton {
@@ -250,10 +249,109 @@ p.skeleton:nth-child(odd) {
     width: 202px !important;
 }
 
+.jobs {
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
 .job-list {
     background-color: #ffffff90;
     padding: 1rem;
     border-radius: 10px;
+}
+
+.job-info__desc {
+    display: inline-block;
+    min-width: 100px;
+}
+
+.job-info__desc p {
+    display: inline-block;
+}
+
+.info {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #374151;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #1f293746 solid 1px;
+    padding-bottom: 1rem;
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tags p {
+    border: #5d23978b solid 1px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: #5d2397;
+    font-size: 0.9rem;
+}
+
+.header-job h3 {
+    margin-bottom: 0;
+}
+
+.filter-group {
+    max-width: 300px;
+    font-family: system-ui;
+}
+
+#salary-values {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #111;
+}
+
+/* SLIDER BASE */
+#salary-slider .noUi-target {
+    height: 6px;
+    border: none;
+    background: #e5e7eb;
+    border-radius: 999px;
+    box-shadow: none;
+}
+
+/* BARRA ACTIVA */
+#salary-slider .noUi-connect {
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+}
+
+/* HANDLE (los circulitos) */
+#salary-slider .noUi-handle {
+    width: 26px;
+    height: 26px;
+    top: -5px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #3b82f6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+/* quitar líneas feas */
+#salary-slider .noUi-handle:before,
+#salary-slider .noUi-handle:after {
+    display: none;
+}
+
+/* hover */
+#salary-slider .noUi-handle:hover {
+    transform: scale(1.1);
+}
+
+/* focus */
+#salary-slider .noUi-handle:active {
+    transform: scale(1.15);
 }
 
 @keyframes shimmer {
@@ -262,7 +360,7 @@ p.skeleton:nth-child(odd) {
     }
 
     50% {
-        opacity: 0.95;
+        opacity: 0.4;
     }
 
     100% {
