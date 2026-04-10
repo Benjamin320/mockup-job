@@ -262,7 +262,7 @@ p.skeleton:nth-child(odd) {
     }
 
     50% {
-        opacity: 0.9;
+        opacity: 0.95;
     }
 
     100% {
